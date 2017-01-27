@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <title>Music History 10</title>
     <link rel="stylesheet" type="text/css" href="/lib/materialize/dist/css/materialize.min.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
   <body>
     <div ng-app="musHist10">
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Music History 10</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="active" href="#">Songs</a></li>
+        <li><a href="">Albums</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="#">Songs</a></li>
+        <li><a href="">Albums</a></li>
+      </ul>
+    </div>
+  </nav>
+
       <div ng-view></div>
     </div>
 
