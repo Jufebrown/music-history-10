@@ -20,11 +20,11 @@ app.config(($routeProvider) => {
   .when('/detail, {
     controller: 'DetailCtrl',
     templateUrl: '/partials/song-detail.html',
-    resolve: {
-      weather: (detailFactory, $route) => {songFactory.getDetail($route.current.params.song)},
-      user (authFactory, $location) {
-        authFactory.getUser().catch(() => $location.url('/'))
-      },
+    // resolve: {
+    //   // weather: (detailFactory, $route) => {songFactory.getDetail($route.current.params.song)},
+    //   // user (authFactory, $location) {
+    //   //   authFactory.getUser().catch(() => $location.url('/'))
+    //   },
     }
   })
 })
