@@ -1,10 +1,5 @@
 const app = angular.module('musHist10', ['ngRoute'])
 
-$( document ).ready(function(){
-  $(".button-collapse").sideNav();
-})
-
-
 
 app.config(($routeProvider) => {
 
@@ -33,4 +28,8 @@ app.config(($routeProvider) => {
     //   },
     }
   })
+})
+
+$( document ).ready(function(){
+  $(".button-collapse").sideNav();
 })
