@@ -1,4 +1,4 @@
-const app = angular.module('musHist10', ['ngRoute'])
+const app = angular.module('musHist10', ['ngRoute', 'ngMaterial'])
 
 
 app.config(($routeProvider) => {
