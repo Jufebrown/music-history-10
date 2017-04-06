@@ -13,6 +13,7 @@ app.config(($routeProvider) => {
   };
   firebase.initializeApp(config);
 
+  // router
   $routeProvider
   .when('/', {
     controller: 'SongCtrl',
